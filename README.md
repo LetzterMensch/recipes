@@ -2,6 +2,7 @@
 
 ## About the Service
 
+This is a project in Hyperskills course : Java Back-end track.
 The application is just a simple multi-user RESTful service for kitchen recipes sharing. That allows to perform CRUD operations with recipes and provides Basic HTTP authentication. It uses a PostgreSQL database to store the data. You can also use any other relational database. If your database connection properties work, you can call some REST endpoints defined in ```localhost``` on **port 8081**. (see below)
 
 ## How to Run 
