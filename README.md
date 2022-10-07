@@ -2,20 +2,22 @@
 
 ## About the Service
 
-This is a project in Hyperskills course : Java Back-end track.
-The application is just a simple multi-user RESTful service for kitchen recipes sharing. That allows to perform CRUD operations with recipes and provides Basic HTTP authentication. It uses a PostgreSQL database to store the data. You can also use any other relational database. If your database connection properties work, you can call some REST endpoints defined in ```localhost``` on **port 8081**. (see below)
+This is a project in Hyperskills course : Java Back-end Developer track.
+This is a simple multi-user web service with Spring Boot that allows storing, retrieving, updating, and deleting recipes via RESTful API. With basic HTTP authentication. I use a PostgreSQL database to store the data. If your database connection works properly, you can call some REST endpoints defined in ```localhost``` on **port 8081**. (see below)
 
+Please note that this is a pure back-end project with little to no front-end. The service only allows you to send and receive Json-type data.
 ## How to Run 
 
 * Clone this repository
 * Change the dir to the root of the project
 * Edit [application.properties](src/main/resources/application.properties) - set database info (db url, db driver, username, password, dialect)
 * Edit [build.gradle] if you use a DBMS other than postgreSQL (need to add jdbc-driver to the dependencies block)
-
+* Visit http://localhost:8081/ to check the connection and further endpoints. Recommend using PostMan to send requests.
 
 ## Allowed endpoints
 
 ### User registration
+![image](https://user-images.githubusercontent.com/103060332/194550709-842d9404-eb25-4b09-8417-3773920a72d3.png)
 
 ```
 POST /api/register
@@ -33,9 +35,11 @@ Content-Type: application/json
 
 
 To unlock the remaining endpoints, you need to log in using http basic auth. Recommend using Postman !
+![image](https://user-images.githubusercontent.com/103060332/194550845-10fe2358-0c34-43c1-b827-df9703c937de.png)
 
 
 ### Create a recipe
+![image](https://user-images.githubusercontent.com/103060332/194550953-5b0ca866-1928-41b1-b6bc-0835eb8a7be1.png)
 
 ```
 POST /api/recipes/
@@ -59,6 +63,7 @@ GET /api/recipes/
 ```
 
 ### Update a recipe
+![image](https://user-images.githubusercontent.com/103060332/194551091-3a0336fd-b78c-4e00-a787-447ae1fc2b68.png)
 
 ```
 PUT /api/recipes/{id}
@@ -86,14 +91,3 @@ DELETE /api/recipes/{id}
 GET /api/recipes/{id}
 ```
 
-### Search for recipes by name
-
-```
-GET /api/recipes/search/?name=Warming Ginder Tea
-```
-
-### Search for recipes by category
-
-```
-GET /api/recipes/search/?category=beverage
-```
