@@ -27,8 +27,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "email" : "masterchef@gmail.com",
-    "password" : "rarelycook"
+    "email" : "master_chef@gmail.com",
+    "password" : "rarely_cook"
 }
 ```
 
@@ -36,7 +36,8 @@ Content-Type: application/json
 
 
 To unlock the remaining endpoints, you need to log in using http basic auth. Recommend using Postman !
-![image](https://user-images.githubusercontent.com/103060332/194550845-10fe2358-0c34-43c1-b827-df9703c937de.png)
+![image](https://user-images.githubusercontent.com/103060332/194552656-918bcdb1-71cb-4539-8ead-9c3b333abfa9.png)
+
 
 
 ### Create a recipe
