@@ -50,11 +50,11 @@ Accept: application/json
 Content-Type: application/json
 
 {
-"name": "Fresh Mint Tea",
+   "name": "Warming Ginger Tea",
    "category": "beverage",
-   "description": "Light, aromatic and refreshing beverage, ...",
-   "ingredients": ["boiled water", "honey", "fresh mint leaves"],
-   "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
+   "description": "Ginger tea is a warming drink for cool weather, ...",
+   "ingredients": ["1 inch ginger root, minced", "1/2 lemon, juiced", "1/2 teaspoon manuka honey"],
+   "directions": ["Place all ingredients in a mug and fill with warm water (not too hot so you keep the beneficial honey compounds in tact)", "Steep for 5-10 minutes", "Drink and enjoy"]
 }
 ```
 
@@ -72,12 +72,13 @@ PUT /api/recipes/{id}
 Accept: application/json
 Content-Type: application/json
 
+
 {
-   "name": "Warming Ginger Tea",
+"name": "Fresh Mint Tea",
    "category": "beverage",
-   "description": "Ginger tea is a warming drink for cool weather, ...",
-   "ingredients": ["1 inch ginger root, minced", "1/2 lemon, juiced", "1/2 teaspoon manuka honey"],
-   "directions": ["Place all ingredients in a mug and fill with warm water (not too hot so you keep the beneficial honey compounds in tact)", "Steep for 5-10 minutes", "Drink and enjoy"]
+   "description": "Light, aromatic and refreshing beverage, ...",
+   "ingredients": ["boiled water", "honey", "fresh mint leaves"],
+   "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
 }
 ```
 
