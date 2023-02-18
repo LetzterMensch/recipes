@@ -2,7 +2,7 @@
 
 ## About the Service
 
-This is a project in Hyperskills course : Java Back-end Developer track.
+This is a project adapted and developed from Java Back-end Developer track in Hyperskills.
 This is a simple multi-user web service with Spring Boot that allows storing, retrieving, updating, and deleting recipes via RESTful API. And secured with basic HTTP authentication by Spring Boot Security. I used a PostgreSQL database to store the data in this project, you can change it to whatever database you like. If your database connection works properly, you can call some REST endpoints defined in ```localhost``` on **port 8081**. (see below)
 
 Please note that this is a pure back-end project with little to no front-end. The service only allows you to send and receive Json-type data.
